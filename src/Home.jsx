@@ -82,7 +82,7 @@ function Home() {
         </div>
         <div className="process-section"style={{marginTop:'8rem',background:'rgba(216, 216, 216, 1)',marginBottom:'3rem',}}>
             <h2 style={{fontSize:'1.4rem',fontWeight:'400',paddingTop:'1rem',textAlign:'center',color:'black'}}>Our Process</h2>
-            <div className="process"style={{display:'flex',alignItems:'center',gap:'1rem',marginTop:'2rem',marginLeft:'0.3rem'}}>
+            <div className="process"style={{display:'flex',alignItems:'center',gap:'2rem',marginTop:'2rem',marginLeft:'2.2rem'}}>
                 <div className="process-one"style={{marginBottom:'3rem',background:'white',padding:'1rem',borderRadius:'16px',width:'15rem'}}>
                     <button className="number"style={{borderRadius:'20px',height:'40px',width:'40px',background:'none',color:'black',
                         border:'2px solid rgb(150,4,4)',marginLeft:'5rem',marginBottom:'1rem'}}>1</button>
