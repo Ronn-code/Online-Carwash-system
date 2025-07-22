@@ -5,6 +5,7 @@ import proj3 from './images/project3.jpg';
 import proj4 from './images/project4.jpg';
 import proj5 from './images/project5.jpg';
 import { FaTwitter, FaLinkedin, FaInstagram, FaTiktok } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function Home() {
     const [showNavbar, setShowNavbar] = useState(false);
@@ -22,9 +23,8 @@ function Home() {
                 <div className={`nav-bar ${showNavbar ? 'open' : ''}`}>
                     <a href='#'>Home</a>
                     <a href='#'>About</a>
-                    <a href='#'>Services</a>
                     <a href='#'>Gallery</a>
-                    <a href='#'>Contact</a>
+                    <Link to='/contact/page'>Contact</Link>
                 </div>
                 <div className="login">
                    <span className='material-icons-sharp'>person</span> 
@@ -38,7 +38,8 @@ function Home() {
                 We deliver unmatched convenience,reliability and shine-every single time <br/></p>
                 <div className="hero-btns">
                     <button id='explore-btn'>Find More</button>
-                    <button id='contact-btn'>Contact us</button>
+                    <Link to='/contact/page'>
+                    <button id='contact-btn'>Contact us</button></Link>
                 </div>
             </div>
         </div>
@@ -59,22 +60,22 @@ function Home() {
                 <div className="waterbased" style={{marginBottom:'1.2rem'}}>
                     <h4 style={{fontSize:'1.2rem',fontWeight:'500',paddingBottom:'1rem',paddingLeft:'2rem'}}>Waterless Car Wash</h4>
                     <h5 style={{fontSize:'1.2rem',fontWeight:'400',color:'rgb(150,4,4)',paddingBottom:'0.7rem',paddingLeft:'2rem'}}>$ 37.50</h5>
-                    <h6 style={{fontSize:'1rem',fontWeight:'400',paddingBottom:'0.5rem'}}><span className='material-icons-sharp'style={{color:'gray'}}>done</span> Thorough exterior and underbody cleaning</h6>
-                    <h6 style={{fontSize:'1rem',fontWeight:'400',paddingBottom:'0.5rem'}}><span className='material-icons-sharp'style={{color:'gray'}}>done</span> Uses high-pressure water and premium soap</h6>
-                    <h6 style={{fontSize:'1rem',fontWeight:'400',paddingBottom:'0.5rem'}}><span className='material-icons-sharp'style={{color:'gray'}}>done</span> Removes dirt,mud, and tough grime</h6>
-                    <h6 style={{fontSize:'1rem',fontWeight:'400',paddingBottom:'0.5rem'}}><span className='material-icons-sharp'style={{color:'gray'}}>done</span> Safe for all vehicle paint types</h6>
-                    <h6 style={{fontSize:'1rem',fontWeight:'400',paddingBottom:'0.5rem'}}><span className='material-icons-sharp'style={{color:'gray'}}>done</span> Eco-friendly water recycling system</h6>
+                    <h6 style={{fontSize:'1rem',fontWeight:'400',paddingBottom:'0.5rem'}}><span className='material-icons-sharp'style={{color:'gray'}}>done</span> No water used-eco conscious dry cleaning</h6>
+                    <h6 style={{fontSize:'1rem',fontWeight:'400',paddingBottom:'0.5rem'}}><span className='material-icons-sharp'style={{color:'gray'}}>done</span> Gently removes dirt with specialized spray</h6>
+                    <h6 style={{fontSize:'1rem',fontWeight:'400',paddingBottom:'0.5rem'}}><span className='material-icons-sharp'style={{color:'gray'}}>done</span> Leaves a polished, wax-like finish</h6>
+                    <h6 style={{fontSize:'1rem',fontWeight:'400',paddingBottom:'0.5rem'}}><span className='material-icons-sharp'style={{color:'gray'}}>done</span> Ideal for quick cleanups and delicate surfaces</h6>
+                    <h6 style={{fontSize:'1rem',fontWeight:'400',paddingBottom:'0.5rem'}}><span className='material-icons-sharp'style={{color:'gray'}}>done</span> Perfect for locations with water restrictions</h6>
                     <button id='book-btn' style={{height:'2rem',width:'80%',background:'rgb(150,4,4)',
                         color:'#ececec',border:'none',marginTop:'1rem',borderRadius:'12px'}}>Book Now</button>
                 </div>
                 <div className="waterbased"style={{marginBottom:'1.2rem'}}>
                     <h4 style={{fontSize:'1.2rem',fontWeight:'500',paddingBottom:'1rem',paddingLeft:'2rem'}}>Steam Car Wash</h4>
                     <h5 style={{fontSize:'1.2rem',fontWeight:'400',color:'rgb(150,4,4)',paddingBottom:'0.7rem',paddingLeft:'2rem'}}>$ 58.80</h5>
-                    <h6 style={{fontSize:'1rem',fontWeight:'400',paddingBottom:'0.5rem'}}><span className='material-icons-sharp'style={{color:'gray'}}>done</span> Thorough exterior and underbody cleaning</h6>
-                    <h6 style={{fontSize:'1rem',fontWeight:'400',paddingBottom:'0.5rem'}}><span className='material-icons-sharp'style={{color:'gray'}}>done</span> Uses high-pressure water and premium soap</h6>
-                    <h6 style={{fontSize:'1rem',fontWeight:'400',paddingBottom:'0.5rem'}}><span className='material-icons-sharp'style={{color:'gray'}}>done</span> Removes dirt,mud, and tough grime</h6>
-                    <h6 style={{fontSize:'1rem',fontWeight:'400',paddingBottom:'0.5rem'}}><span className='material-icons-sharp'style={{color:'gray'}}>done</span> Safe for all vehicle paint types</h6>
-                    <h6 style={{fontSize:'1rem',fontWeight:'400',paddingBottom:'0.5rem'}}><span className='material-icons-sharp'style={{color:'gray'}}>done</span> Eco-friendly water recycling system</h6>
+                    <h6 style={{fontSize:'1rem',fontWeight:'400',paddingBottom:'0.5rem'}}><span className='material-icons-sharp'style={{color:'gray'}}>done</span> Uses high-temperature steam to deep clean</h6>
+                    <h6 style={{fontSize:'1rem',fontWeight:'400',paddingBottom:'0.5rem'}}><span className='material-icons-sharp'style={{color:'gray'}}>done</span> Sanitizes interior and exterior without chemicals</h6>
+                    <h6 style={{fontSize:'1rem',fontWeight:'400',paddingBottom:'0.5rem'}}><span className='material-icons-sharp'style={{color:'gray'}}>done</span> Safe on paint, rims, engines and upholstery</h6>
+                    <h6 style={{fontSize:'1rem',fontWeight:'400',paddingBottom:'0.5rem'}}><span className='material-icons-sharp'style={{color:'gray'}}>done</span> Reaches hard-to-clean areas and crevices</h6>
+                    <h6 style={{fontSize:'1rem',fontWeight:'400',paddingBottom:'0.5rem'}}><span className='material-icons-sharp'style={{color:'gray'}}>done</span> Environmentally friendly-minimal water usage</h6>
                     <button id='book-btn' style={{height:'2rem',width:'80%',background:'rgb(150,4,4)',
                         color:'#ececec',border:'none',marginTop:'1rem',borderRadius:'12px'}}>Book Now</button>
                 </div>
@@ -110,7 +111,7 @@ function Home() {
             </div>
         </div>
         <div>
-            <h2 style={{fontSize:'1.4rem',fontWeight:'400',paddingTop:'1rem',textAlign:'center',color:'black'}}>Our Process</h2>    
+            <h2 style={{fontSize:'1.4rem',fontWeight:'400',paddingTop:'1rem',textAlign:'center',color:'black'}}>Car Wash Gallery</h2>    
         </div>
         <div className="gallery-images"> 
             <div className="image">
@@ -136,7 +137,7 @@ function Home() {
                     <a href='#'style={{textDecoration:'none',color:'rgb(82,49,49)',fontSize:'0.8rem'}}>Home</a>
                     <a href='#'style={{textDecoration:'none',color:'black',fontSize:'0.8rem'}}>About</a>
                     <a href='#'style={{textDecoration:'none',color:'black',fontSize:'0.8rem'}}>Gallery</a>
-                    <a href='#'style={{textDecoration:'none',color:'black',fontSize:'0.8rem'}}>Contact</a>
+                    <Link to='/contact/page'style={{textDecoration:'none',color:'black',fontSize:'0.8rem'}}>Contact</Link>
                 </div>
                 <div className="contact">
                     <h3 style={{fontSize:'1rem',fontWeight:'400',textDecoration:'underline',paddingTop:'2rem',paddingBottom:'1rem'}}>Contact Us</h3>
